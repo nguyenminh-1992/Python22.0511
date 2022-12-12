@@ -23,4 +23,5 @@ class Python0511(Person,BKCAD):  #Kế thừa
 
 hocvien1 = Python0511("Minh",20)
 hocvien1.sleep()
+hocvien1.eat()
     
