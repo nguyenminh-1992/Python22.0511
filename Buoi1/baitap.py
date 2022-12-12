@@ -19,11 +19,12 @@ n = int(input("Nhap so luong hoc vien: "))
 j = 1
 listhocvien = []
 while (j <= n):
-    print("Thong tin hoc vien thu" + j)
+    print("Thong tin hoc vien thu " + str(j))
     name1 = input("Nhap ten: ")
     age1 = int(input("Nhap tuoi: "))
     j += 1
     listhocvien.append(Python(name1,age1))
 
+print("DANH SACH HOC VIEN")
 for i in listhocvien:
     print(i.name,i.age, sep=" - ")
