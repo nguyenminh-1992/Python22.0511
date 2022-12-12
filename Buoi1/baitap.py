@@ -7,3 +7,23 @@
 #Gợi ý: Tạo Class
 #Khai báo List
 #Dùng For để in ra
+
+
+class Python:
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+
+# hocvien1 = Python("Minh",20)
+n = int(input("Nhap so luong hoc vien: "))
+j = 1
+listhocvien = []
+while (j <= n):
+    print("Thong tin hoc vien thu" + j)
+    name1 = input("Nhap ten: ")
+    age1 = int(input("Nhap tuoi: "))
+    j += 1
+    listhocvien.append(Python(name1,age1))
+
+for i in listhocvien:
+    print(i.name,i.age, sep=" - ")
