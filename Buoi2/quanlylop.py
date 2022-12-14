@@ -41,6 +41,16 @@ while (i < n):
 for i in listhocvien:
     print(i.name,i.age,sep=" - ")
 
+#Update
+
+
+
+
+#Delete
+
+
+#
+
 
 
 
