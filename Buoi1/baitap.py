@@ -20,6 +20,8 @@ j = 1
 listhocvien = []
 while (j <= n):
     print("Thong tin hoc vien thu " + str(j))
+
+    #Handling
     name1 = input("Nhap ten: ")
     age1 = int(input("Nhap tuoi: "))
     j += 1
