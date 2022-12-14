@@ -28,9 +28,9 @@ class Quanlylop:
 
     # def delete_hoc_vien(self):
 
-hocvien = Quanlylop()
-hocvien.create_hoc_vien()
-hocvien.show_hoc_vien()
+# hocvien = Quanlylop()
+# hocvien.create_hoc_vien()
+# hocvien.show_hoc_vien()
 
 
 
