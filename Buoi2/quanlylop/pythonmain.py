@@ -18,11 +18,10 @@ while(True):
 
     nhap = int(input("Chon chuc nang: "))
     if (nhap == 1):
-        print("Hello")
-        # hocvien.create_hoc_vien()
+        hocvien.create_hoc_vien()
     elif (nhap == 2):
-        print("Hello 2")
-        # hocvien.show_hoc_vien()
+        hocvien.show_hoc_vien()
+   
     else:
         break
 

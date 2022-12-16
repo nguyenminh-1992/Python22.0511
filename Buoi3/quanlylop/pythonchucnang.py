@@ -3,6 +3,8 @@ from pythonclass import Python
 
 class Quanlylop:
     listhocvien = []
+
+    # [A,C,D,E,F,G]
     
     def create_hoc_vien(self):
         n = int(input("Nhap so hoc vien: "))
@@ -26,7 +28,14 @@ class Quanlylop:
     # def update_hoc_vien(self):
 
 
-    # def delete_hoc_vien(self):
+    def delete_hoc_vien(self,id1):
+        for i in self.listhocvien:
+            if(i.id == id1):
+                self.listhocvien.remove(i)
+        
+
+
+
 
 # hocvien = Quanlylop()
 # hocvien.create_hoc_vien()
