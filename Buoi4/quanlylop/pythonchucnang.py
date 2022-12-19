@@ -11,7 +11,7 @@ class Quanlylop:
         i = 0
         while (i < n):
             i += 1 #Lap vo han
-            id = int(input("Nhap id: "))
+            id = int(input("Nhap id: "))  #Khong nhap tay, tu dong set (1,2,3,4,...)
             ten = input("Nhap ten: ")
             tuoi = int(input("Nhap tuoi: "))
             quequan = input("Nhap que quan: ")
