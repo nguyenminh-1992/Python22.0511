@@ -31,8 +31,9 @@ class Quanlylop:
             self.listhocvien.append(hocvien)
 
     def show_hoc_vien(self):
+        print("{:<5}{:<15}{:<5}{:<10}{:<10}{:<15}{:<15}{:<10}".format("Id","Ten","Tuoi","Que quan","Diem tin","Diem tieng Anh", "Trung binh", "Hoc luc"))
         for i in self.listhocvien:
-            print(i.id,i.name,i.age,i.country,i.english,i.information,i.diemtrungbinh,i.hocluc,sep=" - ")
+            print("{:<5}{:<15}{:<5}{:<10}{:<10}{:<15}{:<15}{:<10}".format(i.id,i.name,i.age,i.country,i.english,i.information,i.diemtrungbinh,i.hocluc,sep=" - "))
 
 
     def update_hoc_vien(self,id1):
@@ -47,6 +48,9 @@ class Quanlylop:
         for i in self.listhocvien:
             if(i.id == id1):
                 self.listhocvien.remove(i)
+
+    def sapxep_hoc_vien(self):
+        self.listhocvien.sort(key=lambda x:x.name, reverse=False)
         
 
 

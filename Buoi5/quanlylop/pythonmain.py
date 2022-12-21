@@ -12,6 +12,7 @@ while(True):
     print("2. Hien thi hoc vien")
     print("3. Sua thong tin hoc vien")
     print("4. Xoa thong tin hoc vien")
+    print("5. Sap xep thong tin hoc vien")
     print("-------------------------------")
 
     print("Moi ban chon chuc nang")
@@ -29,6 +30,9 @@ while(True):
         id2 = int(input("Nhap id muon xoa: "))
         hocvien.delete_hoc_vien(id2)
         print("Da xoa thanh cong")
+    elif (nhap ==5):
+        hocvien.sapxep_hoc_vien()
+        hocvien.show_hoc_vien()
     else:
         break
 
