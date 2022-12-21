@@ -12,9 +12,16 @@ def get_data():
     ketqua = dulieu.fetchall()
     for i in ketqua:
         print(i)
+    
+def get_data2():
+    dulieu.execute("SELECT * FROM Quan_ly_hoc_vien.Hocvien")
+    ketqua = dulieu.fetchone()
+    while ketqua is not None:
+        print(ketqua)
+        ketqua = dulieu.fetchone()
 
 
-get_data()
+get_data2()
     
 
 
