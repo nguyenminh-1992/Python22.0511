@@ -43,11 +43,25 @@ def get_data_byid_andage(id,age):
     for i in ketqua:
         print(i)
 
-get_data2()
-print("-------")
+def create_data():
+    sql = "INSERT INTO `Hocvien`(Id,`Name`,Age, Country	, English, Information)VALUES (5, 'Nguyen Van E' , 23, 'Da Nang',  3 , 4 )"
+    dulieu.execute(sql)
+    ketnoi.commit()
+    print("Da them thanh cong")
+
+def update_data():
+    sql = "UPDATE Quan_ly_hoc_vien.Hocvien SET Age = 25 WHERE Id = 5"
+    dulieu.execute(sql)
+    ketnoi.commit()
+    print("Da cap nhat thanh cong")
+
+# get_data2()
+# print("-------")
 # get_data_byid()
-get_data_byid2()
-get_data_byid_andage(3,22)
+# get_data_byid2()
+# get_data_byid_andage(3,22)
+# create_data()
+update_data()
     
 
 
