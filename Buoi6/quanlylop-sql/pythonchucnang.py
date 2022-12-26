@@ -55,13 +55,20 @@ def update_data():
     ketnoi.commit()
     print("Da cap nhat thanh cong")
 
+def delete_data():
+    sql = "DELETE FROM Quan_ly_hoc_vien.Hocvien WHERE Country = 'Sai Gon' "
+    dulieu.execute(sql)
+    ketnoi.commit()
+    print("Da xoa thanh cong")
+
 # get_data2()
 # print("-------")
 # get_data_byid()
 # get_data_byid2()
 # get_data_byid_andage(3,22)
 # create_data()
-update_data()
+# update_data()
+delete_data()
     
 
 
