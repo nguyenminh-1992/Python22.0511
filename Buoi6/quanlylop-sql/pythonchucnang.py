@@ -28,17 +28,26 @@ def get_data_byid():
 
 def get_data_byid2():
     sql = "SELECT * FROM Quan_ly_hoc_vien.Hocvien WHERE Id = %s"
-    id = int(input("Nhap: "))
+    id = 3
     dulieu.execute(sql,(id,))
     ketqua = dulieu.fetchall()
     for i in ketqua:
         print(i)
 
+def get_data_byid_andage(id,age):
+    sql = "SELECT * FROM Quan_ly_hoc_vien.Hocvien WHERE Id = %s AND age = %s"
+    # id = 3
+    # age = 22
+    dulieu.execute(sql,(id,age))
+    ketqua = dulieu.fetchall()
+    for i in ketqua:
+        print(i)
 
 get_data2()
 print("-------")
 # get_data_byid()
 get_data_byid2()
+get_data_byid_andage(3,22)
     
 
 
