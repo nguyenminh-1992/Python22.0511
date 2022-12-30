@@ -71,8 +71,4 @@ def delete_data():
 delete_data()
     
 
-
-
-
-
 ketnoi.close()
