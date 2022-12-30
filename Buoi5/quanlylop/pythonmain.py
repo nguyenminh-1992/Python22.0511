@@ -17,7 +17,13 @@ while(True):
 
     print("Moi ban chon chuc nang")
 
-    nhap = int(input("Chon chuc nang: "))
+    try:
+        nhap = int(input("Chon chuc nang: "))
+    except:
+        print("Bat buoc nhap so")
+    
+    # nhap = int(input("Chon chuc nang: "))
+
     if (nhap == 1):
         hocvien.create_hoc_vien()
     elif (nhap == 2):
