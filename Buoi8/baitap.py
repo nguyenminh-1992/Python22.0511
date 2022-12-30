@@ -13,3 +13,12 @@
 
 
 # Hiển thị: Mã nhân viên, Tên, tuổi, quê quán, chức vụ, giới tính, Chấm công, Tiền lương
+
+# GD-Giám đốc  TP-Trưởng phòng  CB-Cán bộ
+
+# GD1, TP1, CB1, TP2, CB2, CB3, TP3, GD2, TP4, TP5
+
+# # TP + n = TP5
+# GD 1 + 1
+# CB1
+# TP1
