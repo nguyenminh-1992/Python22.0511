@@ -19,17 +19,31 @@ label3.grid(column=1,row=2)
 label4 = tkinter.Label(giaodien,text="Ket qua",fg="black",bg="white")
 label4.grid(column=1,row=3)
 #Textbox
-textbox1 = tkinter.Entry(giaodien,width=30)
+dulieu1 = tkinter.IntVar()
+textbox1 = tkinter.Entry(giaodien,width=30,textvariable=dulieu1)
 textbox1.grid(column=2,row=1)
 
-textbox2 = tkinter.Entry(giaodien,width=30)
+dulieu2 = tkinter.IntVar()
+textbox2 = tkinter.Entry(giaodien,width=30,textvariable=dulieu2)
 textbox2.grid(column=2,row=2)
 
-textbox3 = tkinter.Entry(giaodien,width=30)
+dulieu3 = tkinter.IntVar()
+textbox3 = tkinter.Entry(giaodien,width=30,textvariable=dulieu3)
 textbox3.grid(column=2,row=3)
+
+#Chuc nang
+def tinhtong():
+    tong = int(dulieu1.get()) + int(dulieu2.get())
+    dulieu3.set(tong)
+    dulieu1.set(" ")
+    dulieu2.set(" ")
+
 #Button
-button = tkinter.Button(giaodien,text="Click me",fg="black",bg="white")
+button = tkinter.Button(giaodien,text="Tinh tong",
+                        fg="black",bg="white",command=tinhtong)
 button.grid(column=2,row=4)
+
+
 
 giaodien.mainloop()
 
