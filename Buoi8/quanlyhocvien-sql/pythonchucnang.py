@@ -54,9 +54,9 @@ def create_data():
     print("Da them thanh cong")
     ketnoi.close()
 
-def update_data():
-    sql = "UPDATE Quan_ly_hoc_vien.Hocvien SET Age = 25 WHERE Id = 5"
-    dulieu.execute(sql)
+def update_data(age,id):
+    sql = "UPDATE Quan_ly_hoc_vien.Hocvien SET Age = %s WHERE Id = %s"
+    dulieu.execute(sql,(age,id))
     ketnoi.commit()
     print("Da cap nhat thanh cong")
 

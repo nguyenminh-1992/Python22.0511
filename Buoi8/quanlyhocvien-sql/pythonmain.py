@@ -19,9 +19,11 @@ while(True):
 
     nhap = int(input("Chon chuc nang: "))
     if (nhap == 1):
-        create_data()
-    elif (nhap == 2):
         get_data()
+    elif (nhap == 2):
+        age = input("Nhap tuoi: ")
+        id = input("Nhap id: ")
+        update_data(age,id)
     elif (nhap ==3):
         # id1 = int(input("Nhap id muon sua: "))
         update_data()
